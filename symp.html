@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1"/>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+	</head>
+<body>
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#"</a>
+		</div>
+	</nav>
+	<div class="col-md-3"></div>
+	<div class="col-md-8 well">
+		<h3 class="text-primary">Symptoms</h3>
+		<hr style="border-top:1px dotted #ccc;"/>
+
+		
+				<?php
+					require 'DBcon.php';
+					$stmt = mysqli_stmt_init($DBcon);
+					if(mysqli_stmt_prepare($stmt, "SELECT * FROM `symptom`")){
+						mysqli_stmt_execute($stmt);
+						mysqli_stmt_bind_result($stmt, $id, $Fever, $Persistentfatigue, $frequentinfection, $losingweight, $swollenlymph, $easybleeding,$recurrentnosebleed,$tinyredspots,$excessivesweating,$bonepain);
+						while(mysqli_stmt_fetch($stmt)){
+				?>
+				
+				<?php
+						}
+						mysqli_stmt_close($stmt);
+					}
+				?>
+			</tbody>
+		</table>
+	</div>
+	<div class="modal fade" id="form_modal" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<form action="save_data.php" method="POST">
+				<div class="modal-content">
+					<div class="modal-body">
+						<div class="col-md-3"></div>
+						<div class="col-md-8">
+							
+							<div>
+								<label>Select the Symptoms:</label>
+								<br style="clear:none;"/>
+								<div class="col-md-8">
+									
+<div class="checkbox">
+										<label><input type="checkbox" name="Fever" value="Fever" >Fever or Chills</label>
+									</div>
+									<div class="checkbox">
+										<label><input type="checkbox" name="Persistentfatigue" value="Persistentfatigue">Persistent Fatigue</label>
+									</div>
+									<div class="checkbox">
+										<label><input type="checkbox" name="frequentinfection" value="frequentinfection">Frequent or Severe infection</label>
+									</div>
+									<div class="checkbox">
+										<label><input type="checkbox" name="swollenlymph" value="swollenlymph">Swollen Lymph Node</label>
+									</div>
+									<div class="checkbox">
+										<label><input type="checkbox" name="easybleeding" value="easybleeding">Easy Bleeding</label>
+									</div>
+									<div class="checkbox">
+										<label><input type="checkbox" name="recurrentnosebleed" value="recurrentnosebleed">Recurrent Nose Bleed</label>
+									</div>
+									<div class="checkbox">
+										<label><input type="checkbox" name="tinyredspots" value="tinyredspots">Tiny Red Spots On Skin</label>
+									</div>
+									<div class="checkbox">
+										<label><input type="checkbox" name="excessivesweating" value="excessivesweating">Excessive Sweating</label>
+									</div>
+									<div class="checkbox">
+										<label><input type="checkbox" name="bonepain" value="bonepain">Bone Pain</label>
+									</div>
+									<div class="checkbox">
+										<label><input type="checkbox" name="losingweight" value="losingweight">Losing Weight</label>
+									</div>	
+																	</div>
+							</div>
+						</div>
+					</div>
+					<div style="clear:both;"></div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-danger" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Close</button>
+						<button name="save" class="btn btn-primary"><span class="glyphicon glyphicon-save"></span><a href="Sympton/save_data.php">Save</a></button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</body>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/bootstrap.js"></script>
+</html>
