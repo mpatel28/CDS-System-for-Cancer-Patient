@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Blood Report</title>
+<title>Sign in page</title>
 <style>
 html{
 font-size:17px;		
@@ -19,8 +19,14 @@ font-size:14px;
 }
 }
 
+
+
+
+
+
+
 body {
-  
+    margin: 0;
 	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
 	background-color:#F1F1F1;
 	text-align: center;
@@ -29,28 +35,48 @@ body {
 {
 	    color: black;
 		padding: 0.5rem 1rem;
-		font-size: large;
+		font-size: x-large;
 		margin: 2px;
 }
 .button:hover {
-    background-color: dimgray;
+    background-color: darkgray;
     color:white;
 	
 }
 .button {
     
     color: black;
-	background-color:lightgray;
+	background-color:antiquewhite;
         padding: 1vh 2vmax;
     text-align: center;
     text-decoration: none;
-    font-size:1rem;
+    font-size:1.1rem;
     margin: 1vh 1vw;
     cursor: pointer;
-	border-radius: 20px;
+	border-radius: 15px;
 	 font-weight:300;
 	 border:1px solid;
 	 border-color:black;
+}
+
+.button1 {
+    -webkit-appearance: none;
+    color: black;
+	background-color:#B58BF8;
+      padding: 1vh 2vmax;
+    text-align: center;
+    text-decoration: none;
+   font-size:1.25rem;
+    margin: 1vw 1vh;
+    cursor: pointer;
+	border-radius: 20px;
+	 font-weight:300;
+	 display:block;
+	 
+	 border:1px solid;
+}
+.cen{
+    text-align: center;
 }
 .button2:hover {
     background-color: dimgray;
@@ -75,21 +101,30 @@ body {
      
 
 }
-	
-
 </style>
 </head>
-<body background="one.png">
-		<br>
-		<a href="logout.php" align="right" class="button2" target="_self" >Log Out</a>
-		<br><br><br><br><br><br><br><br>
-<h1>
-<label class="tex">Do you have Blood Report?</label>
-</h1>
-<br>
 
-<a href="yes.html" align="right" class="button" target="_self" >Yes</a>
-<a href="no.php" align="right" class="button" target="_self" >No</a>
+<body background="one.png">
+        <br>
+        <a href="logout.php" align="right" class="button2" target="_self" >Log Out</a>
+<div class="text-centered">
+
+    <br><br><br>
+<label class="tex">List of test you need to do</label>
+<br><br><br>
+
+    <Lable class="tex">1. Complete Blood Count</lable><br>
+    <Lable class="tex">2. Blood Smear</Lable><br>
+    <Lable class="tex">3. Bone Marrow Biopsy</Lable><br>
+    <Lable class="tex">4. Computerized Temography</Lable><br>
+    <Lable class="tex">5. Magnetic Resonance Imaging</Lable><br>
+</div>
+
+<br><br><br><br></br>
+
+
+<a href="logout.php" align="right" class="button" target="_self" >Log Out</a>
+
 
 
 </body>

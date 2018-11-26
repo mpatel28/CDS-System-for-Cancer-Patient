@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign in page</title>
+<style>
+html{
+font-size:17px;		
+}
+@media screen and (max-width:480px){
+html{
+font-size:12px;	
+}
+}
+@media screen and (max-width:780px){
+html{
+font-size:14px;	
+}
+}
+
+
+
+
+
+
+
+
+body {
+    margin: 0;
+	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	background-color:#F1F1F1;
+	text-align: center;
+}
+.tex
+{
+	    color: black;
+		padding: 0.5rem 1rem;
+		font-size: medium;
+		margin: 2px;
+}
+.button1:hover {
+    background-color: lightgray;
+    color: black;
+	
+}
+.button {
+    
+    color: black;
+	background-color:antiquewhite;
+        padding: 1vh 2vmax;
+    text-align: center;
+    text-decoration: none;
+    font-size:1.1rem;
+    margin: 1vh 1vw;
+    cursor: pointer;
+	border-radius: 15px;
+	 font-weight:300;
+	 border:1px solid;
+	 border-color:black;
+}
+
+.button1 {
+    -webkit-appearance: none;
+    color: black;
+	background-color:#B58BF8;
+      padding: 1vh 2vmax;
+    text-align: center;
+    text-decoration: none;
+   font-size:1.25rem;
+    margin: 1vw 1vh;
+    cursor: pointer;
+	border-radius: 20px;
+	 font-weight:300;
+	 display:block;
+	 
+	 border:1px solid;
+}
+</style>
+</head>
+
+<body background="one.png">
+<div class="text-centered">
+<form  action="signin.php" method="post">
+<table cellpadding="10px" align="center" cellspacing="0px">
+	<br><br>
+<tr>
+<td colspan="2" align="center"><label class="tex">Sign in</label></td></tr>
+<tr><td><td></td></td></tr>
+<tr>
+<td style="border-right:1px solid black;" width="50%">
+<label class="tex">User Name</label><br></td>
+<td>
+<input type="text" name="user_name" class="button" required><br>
+</td>
+</tr>
+<tr>
+<td style="border-right:1px solid black;" width="50%">
+<label class="tex">Password</label><br>
+</td>
+<td>
+<input type="password" name="password" class="button" required>
+<br></td></tr>
+<tr><td></td><td align="center">
+<input type="submit" value="Submit" class="button1" >
+</td></tr>
+</table>
+</form>
+</div>
+
+
+
+</body>
+</html>

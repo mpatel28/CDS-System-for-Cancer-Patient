@@ -1,0 +1,246 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Test Result data</title>
+
+<style>
+html{
+font-size:17px;		
+}
+@media screen and (max-width:480px){
+html{
+font-size:12px;	
+}
+}
+@media screen and (max-width:780px){
+html{
+font-size:14px;	
+}
+}
+
+body {
+    margin: 0;
+	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	background-color:#F1F1F1;
+	text-align: center;
+    background-attachment: fixed;
+}
+.tex
+{
+	    color: black;
+		padding: 0.5rem 1rem;
+		font-size: large;
+		margin: 2px;
+}
+.button1:hover {
+    background-color: dimgray;
+    color:white;
+	
+}
+.button {
+    
+    color: black;
+	background-color:lightgray;
+        padding: 1vh 2vmax;
+    text-align: center;
+    text-decoration: none;
+    font-size:1rem;
+    margin: 1vh 1vw;
+    cursor: pointer;
+	border-radius: 20px;
+	 font-weight:300;
+	 border:1px solid;
+	 border-color:black;
+}
+
+.button1 {
+    -webkit-appearance: none;
+    color: black;
+	background-color:#B58BF8;
+      padding: 1vh 2vmax;
+    text-align: center;
+    text-decoration: none;
+   font-size:1rem;
+    margin: 1vw 1vh;
+    cursor: pointer;
+	border-radius: 20px;
+	 font-weight:300;
+	 display:block;
+	 
+	 border:1px solid;
+}
+.down
+{ 
+       position: fixed;     
+           
+       bottom: 0px; 
+       
+   }	
+   .button2:hover {
+    background-color: dimgray;
+    color:white;
+	
+}
+.button2 {
+    color: black;
+	background-color:lightgray;
+        padding: 1vh 2vmax;
+    text-align: center;
+    text-decoration: none;
+    font-size:1rem;
+    margin: 1vh 1vw;
+    cursor: pointer;
+	border-radius: 12px;
+	 font-weight:300;
+	 border:1px solid;
+	 border-color:black;
+     float: right;
+     margin-right: 2%;
+     
+
+}
+
+</style>
+
+    
+</head>
+
+<body background="one.png">
+        <br>
+        <a href="logout.php" align="right" class="button2" target="_self" >Log Out</a>
+<div class="text-centered">
+<form  action="yes.php" method="post">
+<table cellpadding="10px" align="center" cellspacing="0px">
+<tr>
+<td colspan="2" align="center"><label class="tex">Enter Test Result data</label></td></tr>
+<tr>
+<td style="border-right:1px solid black;" width="50%">
+<label class="tex">White blood cells (WBCs)<br>Unit:cells/mcL</label><br></td>
+<td>
+<input type="number" name="wbc" class="button" required><br>
+</td>
+</tr>
+<tr>
+    <td style="border-right:1px solid black;" width="50%">
+    <label class="tex">RBC (red blood cell count)<br>Unit:million cells/mcL</label><br></td>
+    <td>
+    <input type="number" name="rbc" class="button" required><br>
+    </td>
+    </tr>
+<tr>
+<td style="border-right:1px solid black;" width="50%">
+<label class="tex">Hb or Hbg (hemoglobin) <br>Unit: gm/dL</label><br>
+</td>
+<td>
+<input type="number" name="hb" class="button" required>
+<br></td></tr>
+<tr>
+    <td style="border-right:1px solid black;" width="50%">
+    <label class="tex">Hct (hematocrit) Unit: Percentage</label><br>
+    </td>
+    <td>
+        <input type="number" name="hct" class="button" required>
+        </td></tr>
+    <tr>
+        <td style="border-right:1px solid black;" width="50%">
+        <label class="tex">MCV (mean corpuscular volume)</label><br>
+        </td>
+        <td>
+        <input type="number" name="mvc" class="button" required>
+        <br></td></tr>  
+
+        <tr>
+            <td style="border-right:1px solid black;" width="50%">
+            <label class="tex">Platelets Unit:cells/mcL</label><br>
+            </td>
+            <td>
+            <input type="number" name="platelets" class="button" required>
+            <br></td></tr>
+            
+
+
+
+
+<tr>
+    <td style="border-right:1px solid black;" width="50%">
+     <label class="tex">Promyelocyte</label><br></td>
+        <td>
+        <input type="number" name="prom" class="button" required><br>
+        </td>
+        </tr>
+                  
+        
+<tr>
+    <td style="border-right:1px solid black;" width="50%">
+     <label class="tex">Myelocyte</label><br></td>
+        <td>
+        <input type="number" name="myel" class="button" required><br>
+        </td>
+        </tr>
+
+
+        <tr>
+            <td style="border-right:1px solid black;" width="50%">
+             <label class="tex">Metamyelocyte</label><br></td>
+                <td>
+                <input type="number" name="meta" class="button" required><br>
+                </td>
+                </tr>
+
+                <tr>
+                    <td style="border-right:1px solid black;" width="50%">
+                     <label class="tex">Monocytes</label><br></td>
+                        <td>
+                        <input type="number" name="mono" class="button" required><br>
+                        </td>
+                        </tr>
+
+
+                        <tr>
+                            <td style="border-right:1px solid black;" width="50%">
+                             <label class="tex">Lymphocytes</label><br></td>
+                                <td>
+                                <input type="number" name="lymp" class="button" required><br>
+                                </td>
+                                </tr>
+                                
+<tr>
+    <td style="border-right:1px solid black;" width="50%">
+     <label class="tex">Plasma Cells</label><br></td>
+        <td>
+        <input type="number" name="plas" class="button" required><br>
+        </td>
+        </tr>
+
+        <tr>
+            <td style="border-right:1px solid black;" width="50%">
+             <label class="tex">Neutrophils</label><br></td>
+                <td>
+                <input type="number" name="neut" class="button" required><br>
+                </td>
+                </tr>
+
+
+
+
+
+
+
+
+
+<tr><td></td><td align="center">
+<input type="submit" value="Submit" class="button1">
+</td></tr>
+</table>
+</form>
+</div>
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Symptoms</title>
+
+<style>
+html{
+font-size:17px;		
+}
+@media screen and (max-width:480px){
+html{
+font-size:12px;	
+}
+}
+@media screen and (max-width:780px){
+html{
+font-size:14px;	
+}
+}
+
+body {
+    margin: 0;
+	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	background-color:#F1F1F1;
+	text-align: center;
+}
+.tex
+{
+	    color: black;
+		padding: 0.5rem 1rem;
+		font-size: large;
+		margin: 2px;
+}
+.tex1
+{
+	    color:whitesmoke;
+
+		font-size: larger;
+		
+}
+.button1:hover {
+    background-color: dimgray;
+    color:white;
+	
+}
+.button {
+    
+    color: black;
+	background-color:lightgray;
+        padding: 1vh 2vmax;
+    text-align: center;
+    text-decoration: none;
+    font-size:1rem;
+    margin: 1vh 1vw;
+    cursor: pointer;
+	border-radius: 20px;
+	 font-weight:300;
+	 border:1px solid;
+	 border-color:black;
+}
+
+.button1 {
+    -webkit-appearance: none;
+    color: black;
+	background-color:#B58BF8;
+      padding: 1vh 2vmax;
+    text-align: center;
+    text-decoration: none;
+   font-size:1rem;
+    margin: 1vw 1vh;
+    cursor: pointer;
+	border-radius: 20px;
+	 font-weight:300;
+	 display:block;
+	 
+	 border:1px solid;
+}
+.down
+{ 
+       position: fixed;     
+    text-align: left;
+       bottom: 0px; 
+       
+   }	
+   .button2:hover {
+    background-color: dimgray;
+    color:white;
+	
+}
+.button2 {
+    color: black;
+	background-color:lightgray;
+        padding: 1vh 2vmax;
+    text-align: center;
+    text-decoration: none;
+    font-size:1rem;
+    margin: 1vh 1vw;
+    cursor: pointer;
+	border-radius: 12px;
+	 font-weight:300;
+	 border:1px solid;
+	 border-color:black;
+     float: right;
+     margin-right: 2%;
+     
+
+}
+
+</style>
+
+    
+</head>
+
+<body background="one.png">
+        <br>
+        <a href="logout.php" align="right" class="button2" target="_self" >Log Out</a>
+<div class="text-centered">
+<form  action="symptoms.php" method="post">
+<table cellpadding="10px" align="center" cellspacing="0px">
+    <br><br>
+<tr>
+<td colspan="2" align="center"><label class="tex">Symptoms Page</label></td></tr>
+<tr><td><td></td></td></tr>
+<tr>
+<td style="border-right:1px solid black;" width="50%">
+<label class="tex">Select Symptoms</label><br></td>
+<td>
+    <input type="checkbox" name="fever" value="1" class="button"><label class="tex1">Frequent Fever or Chills</label><br>
+    <input type="checkbox" name="persistent" value="1" class="button"><label class="tex1">Persistent Fatigue</label><br>
+    <input type="checkbox" name="frequent" value="1" class="button"><label class="tex1">Frequent or Severe Infection</label><br>
+    
+    <input type="checkbox" name="losing" value="1" class="button"><label class="tex1">Losing Weight</label><br>
+    <input type="checkbox" name="swollen" value="1" class="button"><label class="tex1">Swollen Lymph Nodes</label><br>
+    <input type="checkbox" name="easy" value="1" class="button"><label class="tex1">Easy Blooding</label><br>
+    
+    <input type="checkbox" name="recurrent" value="1" class="button"><label class="tex1">Recurrent Nose Bleed</label><br>
+    <input type="checkbox" name="tiny" value="1" class="button"><label class="tex1">Tiny Red Spots On Skin</label><br>
+    <input type="checkbox" name="excessive" value="1" class="button"><label class="tex1">Excessive Sweating</label><br>
+    
+    <input type="checkbox" name="bone" value="1" class="button"><label class="tex1">Bone Pain</label><br>
+    <br>
+</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr><td></td><td align="center">
+<input type="submit" value="Submit" class="button1">
+</td></tr>
+</table>
+</form>
+</div>
+
+
+
+
+
+
+</body>
+</html>

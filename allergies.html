@@ -1,0 +1,189 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Allergies</title>
+
+<style>
+html{
+font-size:17px;		
+}
+@media screen and (max-width:480px){
+html{
+font-size:12px;	
+}
+}
+@media screen and (max-width:780px){
+html{
+font-size:14px;	
+}
+}
+
+body {
+    margin: 0;
+	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	background-color:#F1F1F1;
+	text-align: center;
+}
+.tex
+{
+	    color: black;
+		padding: 0.5rem 1rem;
+		font-size: large;
+		margin: 2px;
+}
+.tex1
+{
+	    color:whitesmoke;
+
+		font-size: larger;
+		
+}
+.button1:hover {
+    background-color: dimgray;
+    color:white;
+	
+}
+.button {
+    
+    color:white;
+	background-color:lightgray;
+        padding: 1vh 2vmax;
+    text-align: center;
+    text-decoration: none;
+    font-size:1rem;
+    margin: 1vh 1vw;
+    cursor: pointer;
+	border-radius: 20px;
+	 font-weight:300;
+	 border:1px solid;
+	 border-color:black;
+}
+
+.button1 {
+    -webkit-appearance: none;
+    color: black;
+	background-color:#B58BF8;
+      padding: 1vh 2vmax;
+    text-align: center;
+    text-decoration: none;
+   font-size:1rem;
+    margin: 1vw 1vh;
+    cursor: pointer;
+	border-radius: 20px;
+	 font-weight:300;
+	 display:block;
+	 
+	 border:1px solid;
+}
+.down
+{ 
+       position: fixed;     
+           
+       bottom: 0px; 
+       
+   }	
+   .button2:hover {
+    background-color: dimgray;
+    color:white;
+	
+}
+.button2 {
+    color: black;
+	background-color:lightgray;
+        padding: 1vh 2vmax;
+    text-align: center;
+    text-decoration: none;
+    font-size:1rem;
+    margin: 1vh 1vw;
+    cursor: pointer;
+	border-radius: 12px;
+	 font-weight:300;
+	 border:1px solid;
+	 border-color:black;
+     float: right;
+     margin-right: 2%;
+     
+
+}
+</style>
+
+    
+</head>
+
+<body background="one.png">
+        <br>
+        <a href="logout.php" align="right" class="button2" target="_self" >Log Out</a>
+<div class="text-centered">
+<form  action="allergies.php" method="post">
+<table cellpadding="10px" align="center" cellspacing="0px">
+<tr>
+<td colspan="2" align="center"><label class="tex">Allergies</label></td></tr>
+<tr><td><td></td></td></tr>
+<tr>
+<td style="border-right:1px solid black;" width="50%">
+<label class="tex">Skin</label><br></td>
+<td>
+    <input type="checkbox" name="eczema" value="1" class="button"><label class="tex1">Eczema</label>
+    <input type="checkbox" name="hives" value="1" class="button"><label class="tex1">Hives</label>
+    <input type="checkbox" name="warts" value="1" class="button"><label class="tex1">Warts</label>
+    <br><br><br>
+</td>
+</tr>
+<br><br>
+<tr>
+        <td style="border-right:1px solid black;" width="50%">
+<label class="tex">Food</label><br></td>
+<td>
+    <input type="checkbox" name="eggs" value="1" class="button"><label class="tex1">Eggs</label>
+    <input type="checkbox" name="milk" value="1" class="button"><label class="tex1">Milk</label>
+    <input type="checkbox" name="treenut" value="1" class="button"><label class="tex1">TreeNut</label>
+    <input type="checkbox" name="fish" value="1" class="button"><label class="tex1">Fish</label>
+    <input type="checkbox" name="wheat" value="1" class="button"><label class="tex1">Wheat</label>
+    <input type="checkbox" name="soy" value="1" class="button"><label class="tex1">soy</label>
+    <input type="checkbox" name="peanut" value="1" class="button"><label class="tex1">Peanut</label>
+    <br><br><br>
+</td>
+</tr>
+
+<tr>
+        <td style="border-right:1px solid black;" width="50%">
+
+<label class="tex">Drugs</label><br></td>
+<td>
+    <input type="checkbox" name="penicillin" value="1" class="button"><label class="tex1">Penicillin</label>
+    <input type="checkbox" name="antibiotics" value="1" class="button"><label class="tex1">Antibiotics(Sulpha drugs)</label><br>
+    <input type="checkbox" name="antiinflammatory" value="1" class="button"><label class="tex1">AntiInflammatory Drugs</label>
+    <input type="checkbox" name="chemotherapy" value="1" class="button"><label class="tex1">Chemotherapy Drugs</label><br>
+</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr><td></td><td align="center">
+<input type="submit" value="Submit" class="button1">
+</td></tr>
+</table>
+</form>
+</div>
+
+
+
+
+
+
+</body>
+</html>
